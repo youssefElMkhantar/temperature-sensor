@@ -1,7 +1,7 @@
-import { Thresholds } from './../../config/thresholds.js';
+import { Thresholds, type ThresholdsType } from './../../config/thresholds.js';
 
 export class UpdateThresholdsUseCase {
-  execute(newThresholds: { hot: number; cold: number }) {
+  execute(newThresholds: ThresholdsType) {
     // validation métier possible
     Thresholds.update(newThresholds);
   }
