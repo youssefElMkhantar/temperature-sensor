@@ -8,7 +8,6 @@
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
 
-    "types": [],
     // For nodejs:
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
@@ -42,6 +41,8 @@
     "isolatedModules": true,
     "forceConsistentCasingInFileNames": true,
     "moduleDetection": "force",
-    "skipLibCheck": true
-  }
+    "skipLibCheck": true,
+    "types": ["jest", "node"]
+  },
+  "include": ["src", "tests"]
 }
