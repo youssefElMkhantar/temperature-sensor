@@ -1,0 +1,33 @@
+{
+  "name": "temperature-sensor",
+  "version": "1.0.0",
+  "description": "- Demonstrate what you can do within a reasonable time and show how you code in real-life situations. - This project should soon go into production regarding the quality of the code. - The API must adhere to a Hexagonal or Clean Code architecture and must include tests.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node dist/index.js",
+    "dev": "nodemon src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/youssefElMkhantar/temperature-sensor.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/youssefElMkhantar/temperature-sensor/issues"
+  },
+  "homepage": "https://github.com/youssefElMkhantar/temperature-sensor#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.1.0",
+    "nodemon": "^3.1.11",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
