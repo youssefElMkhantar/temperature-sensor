@@ -4,7 +4,7 @@
   "description": "- Demonstrate what you can do within a reasonable time and show how you code in real-life situations. - This project should soon go into production regarding the quality of the code. - The API must adhere to a Hexagonal or Clean Code architecture and must include tests.",
   "main": "index.js",
   "scripts": {
-    "build": "npx tsc",
+    "build": "tsc --project tsconfig.json --outDir dist --rootDir src",
     "start": "node dist/index.js",
     "dev": "nodemon --exec node --import tsx src/index.ts",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
