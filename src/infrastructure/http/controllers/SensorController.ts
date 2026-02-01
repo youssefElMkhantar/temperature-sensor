@@ -31,7 +31,6 @@ router.get('/temperature/history', async (req, res) => {
 });
 
 router.put('/thresholds', async (req, res) => {
-  console.log('hhhh', req.body);
   if (
     typeof req.body !== 'object' ||
     !(req.body?.hot > 0 && req.body?.cold > 0)
