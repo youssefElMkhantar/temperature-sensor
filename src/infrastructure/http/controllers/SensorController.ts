@@ -31,6 +31,13 @@ router.get('/temperature/history', async (req, res) => {
 });
 
 router.put('/thresholds', async (req, res) => {
+  console.log('hhhh', req.body);
+  if (
+    typeof req.body !== 'object' ||
+    !(req.body?.hot > 0 && req.body?.cold > 0)
+  ) {
+    return res.status(400).json('invalid input. please enter 2 positive value');
+  }
   const { hot, cold }: typeof Thresholds = req.body;
   const result = await updateThresholds.execute({ hot, cold });
   res.json(result);
